@@ -19,7 +19,8 @@ router.get('/:id', getOrder ,  (req, res) => {
 router.post('/',  async (req, res) => {
     const order = new Order({
         nameClient: req.body.nameClient,
-        nameOrder: req.body.nameOrder
+        nameOrder: req.body.nameOrder,
+        priceOrder: req.body.priceOrder
     })
 
         try {
@@ -36,6 +37,9 @@ router.patch('/:id', getOrder ,async (req, res) => {
     }
     if (req.body.nameOrder != null) {
         res.order.nameOrder = req.body.nameOrder
+    }
+    if (req.body.priceOrder != null) {
+        res.order.priceOrder = req.body.priceOrder
     }
 
     try {
