@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+let port = process.env.PORT || 3000;
 
 
 
@@ -26,4 +27,4 @@ const ordersRouter = require('./routes/orders')
 app.use('/orders', ordersRouter)
 
 
-app.listen(3000 , () => console.log('server started'))
+app.listen(port , () => console.log('server started'))
