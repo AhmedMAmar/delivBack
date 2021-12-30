@@ -4,7 +4,8 @@
   "description": "back-end of flutter delivery app",
   "main": "index.js",
   "scripts": {
-    "Start": "node server.js"
+    "Start": "node server.js",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
