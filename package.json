@@ -18,10 +18,11 @@
   "homepage": "https://github.com/AhmedMAmar/backend-flutter#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "mongoose": "^6.1.4"
+    "mongoose": "^6.1.4",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0"
+    
   },
   "engines": {
     "node": "16.13.1"
