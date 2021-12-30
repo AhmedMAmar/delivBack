@@ -1,8 +1,8 @@
-require('dotenv').config()
+require('dotenv').config();
 
-const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
 let port = process.env.PORT || 3000;
 
 
