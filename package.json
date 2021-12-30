@@ -4,7 +4,7 @@
   "description": "back-end of flutter delivery app",
   "main": "index.js",
   "scripts": {
-    "Start": "set NODE_ENV=production && node server.js"
+    "Start": " node server.js"
     
   },
   "repository": {
