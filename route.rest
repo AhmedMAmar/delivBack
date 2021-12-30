@@ -1,0 +1,30 @@
+GET http://localhost:3000/orders
+
+###
+
+GET http://localhost:3000/orders/61ccc65e8aa921f778052c39
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "nameClient": "Med Ebabe",
+    "nameOrder": "crep house wrap "
+}
+
+###
+
+DELETE http://localhost:3000/orders/61ccc3893fd583d64a3a7035
+
+###
+
+PATCH http://localhost:3000/orders/61ccc3893fd583d64a3a7035
+Content-Type: application/json
+
+{
+
+    "nameClient": "kossovy"
+
+}
