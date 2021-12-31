@@ -20,7 +20,8 @@ router.post('/',  async (req, res) => {
     const order = new Order({
         nameClient: req.body.nameClient,
         nameOrder: req.body.nameOrder,
-        priceOrder: req.body.priceOrder
+        priceOrder: req.body.priceOrder,
+        imageOrder: req.body.imageOrder
     })
 
         try {
@@ -40,6 +41,9 @@ router.patch('/:id', getOrder ,async (req, res) => {
     }
     if (req.body.priceOrder != null) {
         res.order.priceOrder = req.body.priceOrder
+    }
+    if (req.body.imageOrder != null) {
+        res.order.imageOrder = req.body.imageOrder
     }
 
     try {

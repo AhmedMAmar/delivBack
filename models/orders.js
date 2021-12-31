@@ -13,6 +13,10 @@ const ordersSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    imageOrder: {
+        type: String,
+        required: true
+    },
     orderDate: {
         type: Date,
         required: true,
