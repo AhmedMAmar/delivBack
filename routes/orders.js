@@ -54,7 +54,7 @@ router.patch('/:id', getOrder ,async (req, res) => {
     }
 })
 //Deleting one
-router.get('/:id' ,getOrder, async (req, res) => {
+router.delete('/:id' ,getOrder, async (req, res) => {
     try {
         await res.order.remove();
         res.json({ message: 'Order Deleted' })
