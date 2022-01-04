@@ -26,8 +26,6 @@ app.use(express.json())
 const ordersRouter = require('./routes/orders')
 app.use('/orders', ordersRouter)
 
-const restaurantsRouter = require('./routes/restaurants')
-app.use('/restaurants', restaurantsRouter)
 
 
 app.listen(port , () => console.log('server started'))
