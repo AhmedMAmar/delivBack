@@ -33,4 +33,7 @@ const ordersSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('order', ordersSchema)
+var Order = module.exports = mongoose.model('order', ordersSchema);
+module.exports.get = function (callback , limit) {
+    Order.find(callback).limit(limit);
+}

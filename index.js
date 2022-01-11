@@ -23,8 +23,8 @@ db.once("open", function () {
 
 app.use(express.json())
 
-const ordersRouter = require('./routes/orders')
-app.use('/orders', ordersRouter)
+const apiRoutes = require('./routes/api')
+app.use('/api', apiRoutes)
 
 
 
